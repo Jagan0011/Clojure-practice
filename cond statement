@@ -1,0 +1,9 @@
+Cond Statement
+
+  (cond
+     (= 100 x) (println "x is 100")
+     (= 14 x) (println "x is 100")
+     (> 154 x) (println "154 is greater")
+     (= 145 x) (println "x is 100")
+     :else (println "unexpected")
+   )
