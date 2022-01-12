@@ -1,4 +1,4 @@
-(ns hello-world.core
+(ns hello1.core
  (:gen-class))
  (require '[clojure.string :as str])
 (defn -main
