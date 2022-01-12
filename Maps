@@ -1,0 +1,28 @@
+(ns hello1.core
+ (:gen-class))
+ (require '[clojure.set :as set])
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+
+  
+  (def scores {
+    "Fred"  1400
+    "Bob"   1240
+    "Angela" 1024})
+    (def scores1 {
+      "apple"  1400
+      "Banana"   1240
+      "strawberry" 1024})
+  (println  scores)
+  (println  (get scores "Bob"))
+  (println  (find scores "Bob"))
+  (println  (keys scores ))
+  (println  (vals scores ))
+  (println  (set/map-invert scores ))
+  (println  (contains? scores "Bob"))
+  (println  (contains? scores "Siva"))
+   (println (merge-with + scores scores1))
+ 
+)
