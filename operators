@@ -1,0 +1,25 @@
+ ;;(operator operand1 operand2 .... operandn)
+ (println (+ x x))
+
+ (println (- x x))
+
+ (println (* x x))
+
+ (println (/ x x))
+
+ (println (+ x x x x x x))
+ ;;increment
+ (println (inc x))
+
+
+;;Relational operators
+ (println (> x 100))
+ (println (>= x 100))
+ (println (not= x 100))
+
+Logical 
+
+ (println (and true (>= x 100)))
+
+ (println (or true (>= x 100)))
+ (println (not true (>= x 100)))
