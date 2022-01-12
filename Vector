@@ -1,0 +1,23 @@
+(ns hello1.core
+ (:gen-class))
+ 
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+
+  (def numbers (vector 1 2 3 4 5))
+  (println  numbers)
+  (println  (get numbers 2))
+  (println  (nth numbers 2))
+  (println  (conj numbers 20))
+  (println  (pop numbers))
+
+  (def test (vector 1.1 2.2 3.3 4.4 5.5))
+  (println  test)
+  (println  (get test 2))
+  (println  (nth test 2))
+  (println  (conj test 20))
+  (println  (pop test))
+
+ )
