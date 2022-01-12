@@ -1,0 +1,9 @@
+Case statement
+
+ (case x
+     10 (println "it's 10")
+     100 (println "it's 100")
+     1000 (println "it's 1000")
+     10000 (println "it's 10000")
+   (println "None matched!")
+ )
