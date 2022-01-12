@@ -1,0 +1,5 @@
+If condition
+ (def x 1000)
+ (if (= x 1000)
+   (println "it's 1000")
+   (println "it's not!"))
