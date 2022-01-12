@@ -1,0 +1,24 @@
+ (def testvar (atom 1))
+ (while (< @testvar 10)
+   (do
+       (println @testvar)
+       (swap! testvar inc)
+   )
+ )
+
+; Loop with recur
+(loop [x 10]
+  (when (> x 0)
+    (println x)
+    (recur (- x 1))))
+    
+    Do Seq	
+
+(doseq [ i [100 200 300 400 500 600]]
+   (println i))
+
+Do times
+
+
+(dotimes [n 20]
+   (println n))
