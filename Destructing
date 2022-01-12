@@ -1,0 +1,17 @@
+(ns hello1.core
+  (:gen-class))
+  (require '[clojure.string :as str])
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+
+  (def my-vector [11 12 13 14])
+  (let [[a b c d] my-vector]
+  (println a b c d))
+
+  (def mydata [1 2 3 4 5 6 100 30 nil])
+  (let [[a b & rest] mydata]
+    (println a b rest)
+    )
+ )
