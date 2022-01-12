@@ -1,0 +1,12 @@
+If-do
+
+ ;;Numbers
+ (def x 1000)
+ (
+   if (= x 1000)
+   (do  
+     (println "it's 1000")
+     (println "it's True")
+   )
+   (println "it's not!")
+ )
