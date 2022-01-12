@@ -1,0 +1,24 @@
+; reverse the given string
+(defn reversestring [word]
+    (
+      (def rword (clojure.string/reverse word))
+        (println rword)
+  
+   )
+  )
+  (reversestring "hello")
+  
+  
+; string to check palindrome or not
+(defn checkPalindrome [word]
+    (
+      (def lcword (clojure.string/lower-case word))
+      (def rword (clojure.string/reverse lcword))
+    (if (= 0 (compare lcword rword))
+    (println "Palindrome!!!")
+    (println "NOTPalindrome")
+   )
+  )
+  )
+
+  (checkPalindrome "TESET")
