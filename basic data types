@@ -1,0 +1,21 @@
+;; (def variable-name variable-value)
+ ;;Numbers
+ (def x 100)
+ ;;float
+ (def f 1.232342)
+ ;;string
+ (def first-name "Siva")
+ ;;boolean
+ (def flag false)
+ ;;ratio
+ (def frac 12/5)
+ ;;null
+ (def test nil)
+
+ (println x)
+ (println f)
+ (println first-name)
+ (println flag)
+ (println frac)
+ (println test)
+
