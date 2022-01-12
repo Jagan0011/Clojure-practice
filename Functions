@@ -1,0 +1,37 @@
+(defn Welcome []
+ (println "Welcome to Functioins")
+  
+  (def x 1)
+  (def y 2)
+  (println (+ x y))
+  (println (inc x))
+  (println (dec y))
+)
+)
+
+  (Welcome)
+  
+  ;Functions with arguments
+  (defn add [x y z] (+ x y z))
+   (defn sub [x y] (- x y))
+   (defn mul [x y] (* x y))
+  
+  (println (add 10 20 30))
+  (println (sub 10 20 ))
+  (println (mul 10 20 ))
+  
+  ; Anonymous Functions
+  (defn addAnonymus [x y]
+ ((fn [a b] (+ a b)) x y)
+)
+(println  (addAnonymus 450 20))
+
+(defn addAnonymus [x y z]
+ ((fn [a b c] (- a b c)) x y z)
+)
+(println  (addAnonymus 450 20 10))
+
+;variadic function for varying number of arguments
+ (defn vardiacfun [x & y] (str x (clojure.string/join " " y)))
+
+  (println (vardiacfun "Hello " "this" "is" "variadic function"))
