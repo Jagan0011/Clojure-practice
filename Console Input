@@ -1,0 +1,20 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+  ;Reading from Console and parsing INT
+
+  (println "Enter Name: ")
+  (def name (read-line))
+  (println "Name:" name)
+ 
+  (println "Enter Age: ")
+  (def age (Integer/parseInt (read-line)))
+  (println "Age:" age)
+ 
+
+
+ )
