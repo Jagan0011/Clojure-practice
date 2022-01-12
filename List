@@ -1,0 +1,9 @@
+(def numbers (list 1 2 3 4 5))
+ (println  numbers)
+ (println (list* 20 30 50 numbers)) ; 20 30 50 1 2 3 4 5
+ (println (nth numbers 3)) ; 4
+ (println (cons 25 numbers)) ; 25 1 2 3 4 5
+ (println (count numbers))   ; 5 
+ (println (conj numbers 50 6)) ; 6 50 1 2 3 4 5
+ (println (first numbers)) ; 1
+ (println (rest numbers)) ; 2 3 4 5
