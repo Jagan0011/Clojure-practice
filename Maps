@@ -24,5 +24,11 @@
   (println  (contains? scores "Bob"))
   (println  (contains? scores "Siva"))
    (println (merge-with + scores scores1))
- 
+ (def currency (hash-map "USA" "USD" "INDIA" "INR" "UK" "GBP"))
+(def scurrency (sorted-map "USA" "USD" "INDIA" "INR" "UK" "GBP"))
+(println  currency)
+(println  scurrency)
+
+(def shortCurrency (set/rename-keys currency {"USA" "US" "INDIA" "IN" "UK" "UK"}))
+(println  shortCurrency)
 )
