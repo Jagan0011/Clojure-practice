@@ -17,7 +17,7 @@
  (println (>= x 100))
  (println (not= x 100))
 
-Logical 
+;;Logical 
 
  (println (and true (>= x 100)))
 
