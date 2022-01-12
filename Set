@@ -4,6 +4,7 @@
  (def stats1 (set '(2  4)))
  (println  numbers)
  (println  (get numbers 2))
+ (println (sorted-set 4 2 8 3))
  (println (contains? numbers 3))
  (println (contains? numbers 30))
  (println (count numbers))
