@@ -1,0 +1,14 @@
+Atom
+
+ (def mycounter (atom 1))
+ (println @mycounter)
+ (swap! mycounter inc)
+ (println @mycounter)
+
+
+ (def mycounter (atom 1))
+ (println @mycounter)
+ (swap! mycounter inc)
+ (println @mycounter)
+ (reset! mycounter 100)
+ (println @mycounter)
