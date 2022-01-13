@@ -10,10 +10,8 @@ Applies function f to the argument list formed by prepending intervening argumen
  ;;apply
 (println "max" (apply max [1 4 240]))
 (println "min" (apply min [123 4 240]))
+(println "reverse" (apply  str (reverse "clojure")))
 (println "max" (max 1 4 200 200000))
 (println "min" (min 1 4 200 200000))
-
-
-  
 
  )
