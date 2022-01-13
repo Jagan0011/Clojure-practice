@@ -1,0 +1,25 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+ 
+;;multi method
+
+(defmulti greeting
+  (fn[x] (get x "language")))
+ 
+  ;params is not used, so we could have used [_]
+ (defmethod greeting "English" [params]
+  "Hello!")
+ (defmethod greeting "French" [params]
+  "Bonjour!")
+ (defmethod greeting "Hindi" [params]
+    "Namaskar!")
+ (defmethod greeting "Sanskrit" [params]
+      "Pranam!")
+  (println  (greeting {"language" "Hindi"}))
+ 
+ )
+ 
