@@ -1,0 +1,18 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+ 
+ 
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  ;; reduce
+  (println (reduce + [8 4000 10 300]))
+ 
+  ;;apply to do reduce
+  (println (apply + [8 4000 10 300]))
+ 
+  ;;zip map function 
+  (println (zipmap [:a :b :c] [100 299 430]))
+ )
+ 
