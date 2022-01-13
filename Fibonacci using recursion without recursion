@@ -1,0 +1,27 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+ 
+ 
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (defn fibor [n]
+    (if (or (= n 0) (= n 1))
+      n
+      (+ (fibor(- n 1)) (fibor(- n 2))))
+  )
+ 
+  (defn fiborecur [i]
+    (let [fibo (fn [one two n]
+      (if ( = i n)
+        one
+        (recur two (+ one two) (inc n))))
+        ]
+        (fibo 0 1 0))
+   )
+   
+ (println(fibor 4))
+ (println(fiborecur 6))
+ )
+ 
