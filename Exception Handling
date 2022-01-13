@@ -1,0 +1,21 @@
+(ns hello1.core
+  (:gen-class))
+ 
+ 
+  (defn -main
+    "I don't do a whole lot ... yet."
+    [& args]
+  
+    (try
+      (def data1 (slurp "data.txt"))
+      (println data1)
+      (catch java.io.FileNotFoundException e (println (str "FileNotFoundException is " (.toString e))))
+      (catch Exception e (println (str "Exception is " (.toString e))))
+      (finally (println "This is finally done!"))
+     )
+     
+
+ 
+    )
+   
+ 
