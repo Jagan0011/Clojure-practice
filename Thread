@@ -1,0 +1,19 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+ 
+ 
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+ 
+  (println (conj (conj (conj [] 1) 2) 3))
+
+;;thread-first macro
+ (println (-> [] (conj 1) (conj 2) (conj 3) ))
+;;thread-last macro
+(println (->> ["india" "usa" "japan"] (map clojure.string/upper-case) (map #(str "Hello "%))))
+
+)
+
+ 
