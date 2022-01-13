@@ -1,0 +1,20 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+ 
+ 
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+ 
+  (defn dateprint []
+    (def date (.toString (java.util.Date.)))
+    (println date)
+    (println (type date))
+   )
+   (dateprint)
+   
+
+)
+
+ 
