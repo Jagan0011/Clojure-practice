@@ -1,0 +1,25 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+ 
+ 
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+ 
+  (defn factorial [n]
+    (if (< n 2)
+      1
+      (* n (factorial (- n 1)))))
+
+;;tail recursion
+(defn factorialtr [n]
+(loop [cnt n acc 1]
+  (if (< cnt 2) acc
+    (recur (dec cnt) (* cnt acc)))))
+
+(println (factorial 5))
+(println (factorialtr 5))
+
+ )
+ 
