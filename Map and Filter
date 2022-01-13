@@ -1,0 +1,27 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+ ;; maps
+ (println (map inc [1 2 3 4 5]))
+ (println (map (fn [i] (* i 3)) [1 2 3 4 5]))
+ (println (map (fn [w] (str w ": " (count w))) ["Could" "not" "locate" "clojure/myutil__init.class"]))
+ ;;filters
+ (println (filter odd? [1 2 3 4 5]))
+ (println (filter even? [1 2 3 4 5]))
+ (println (filter odd? (map (fn [i] (* i i)) [1 2 3 4 5])))
+ (println (filter even? (map (fn [i] (* i i)) [1 2 3 4 5])))
+ (println (remove odd? (map (fn [i] (* i i)) [1 2 3 4 5])))
+ (println (take 3 (map (fn [i] (* i i)) [1 2 3 4 5])))
+ (println (drop 3 (map (fn [i] (* i i)) [1 2 3 4 5])))
+  ;; efficient as 3 of 5 were picked and then mapped
+ (println (map (fn [i] (* i i)) (filter odd? [1 2 3 4 5])))
+  ;; 5 were mapped and then 3 were picked
+ (println (filter odd? (map (fn [i] (* i i)) [1 2 3 4 5])))
+(def filtered (filter odd? [1 2 3 4 5]))
+(println (map (fn [i] (* i i)) filtered))
+ 
+ )
+ 
