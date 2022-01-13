@@ -1,0 +1,16 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+
+  ;;;variadic function
+(defn myvarfun
+  [a b  & rest] 
+  (println "My Function with Args" a  b rest)
+  )
+  (myvarfun "test" "hello" "hello" "hello" "hello" "hello"  "hello" "hello" "hello")
+
+ )
