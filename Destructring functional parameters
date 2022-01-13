@@ -1,0 +1,17 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+
+  ;destructing function parameters
+  (defn printlatlon [
+    [[lat1, lon1] [lat2 lon2]]]
+    (println (str "Lat1:" lat1 " Lon1:" lon1 " Lat2:" lat2 " Lon2:" lon2 )))
+   
+    (def latlong1 [70.0,2.34])
+    (def latlong2 [70.4,2.64])
+    (printlatlon [latlong1, latlong2])
+ )
