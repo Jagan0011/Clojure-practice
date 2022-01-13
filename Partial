@@ -1,0 +1,15 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+  
+  ;partial
+(def format-price1 (partial * 100))
+(def format-price (partial + 100))
+(println (format-price1 100 ))
+(println (format-price 200 100 ))
+
+ )
