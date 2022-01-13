@@ -1,0 +1,14 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+ 
+ ;; threading Macro
+(println  (->> [1 2 3 4 5] (filter odd?) (map (fn [i] (* i i)))))
+ 
+ )
+ 
+
