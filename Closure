@@ -1,0 +1,19 @@
+;A closure is a function that has access to some named value/variable outside its own scope, so from a higher scope surrounding the function when it was created.
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+  ;closure
+  (defn inner [from-outer]
+    (fn [] 
+      (println from-outer))
+    )
+   (def outer1 (inner "this is from outer"))
+   (println outer1)
+   (println (outer1))
+   
+
+ )
