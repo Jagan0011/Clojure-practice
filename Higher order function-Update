@@ -1,0 +1,12 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+ ; Higher order functions
+  (def apple {:item "Apple" :price 1.0 :color "red"})
+ (println (update apple  :price (fn [x] (* x 0.8))))
+ (println (update apple  :item (fn [x] (clojure.string/upper-case x))))
+ )
