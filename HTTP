@@ -1,0 +1,12 @@
+(ns hello1.core
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "Hello, Team this is new!!")
+
+(println(slurp "https://google.com"))
+(println (slurp "http://httpbin.org/get?name=David"))
+
+ )
