@@ -1,0 +1,14 @@
+(ns hello1.core
+  (:require [clojure.set :as set])
+  (:gen-class))
+  
+ (defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+
+;; lazy sequence
+(println (iterate inc 0) )
+ 
+ )
+ 
+
